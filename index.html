@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="ProxiMe">
+    <meta name="theme-color" content="black">
+    <meta name="description" content="A proximity applet that shows whats around">
+    <link rel="apple-touch-icon" href="images/icons/proxime-icon.png">
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>ProxiMeApp</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h2 id="top-title"></h2>
+    <section class="controls">
+    <div class="slide-container">
+        <label type="label">Distance: </label>
+        <input type="range" min="1" max="10" value="10" class="slider" id ="range">
+        <label for="range" class="left" type="label">1 km</label>
+        <label for="range" class="right" type="label">10 km</label>
+    </div>
+</section>
+    <div class="btn-container">
+        <button class="update-btn" type="button" id="rangeBtn" onclick="update()">Update</button>
+    </div> 
+<section id="main-container"></section>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>

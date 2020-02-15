@@ -1,0 +1,18 @@
+{   
+    "short_name": "ProxiMe",
+    "name": "ProxiMe",
+    "background_color": "#222",
+    "description": "A small application that uses geolocation to show what points of interests there are around the user",
+    "start_url": "./index.html",
+    "theme_color": "#333",
+    "display": "standalone",
+    
+    "icons": [
+        {
+            "src": "assets/icons/proxime-icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "platform": "play"
+}
